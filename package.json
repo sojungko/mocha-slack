@@ -1,0 +1,33 @@
+{
+  "name": "mocha-slack",
+  "version": "1.0.0",
+  "description": "Lightweight module that logs mocha test results on Slack",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sojungko/mocha-slack.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mocha",
+    "slack",
+    "reporter",
+    "tests",
+    "integration-tests",
+    "continuous-integration"
+  ],
+  "author": "Sojung Park",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "rimraf": "^2.6.1"
+  }
+}
